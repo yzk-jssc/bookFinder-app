@@ -1,0 +1,180 @@
+body{
+    font-family: 'Cuprum';
+    background: rgb(209, 191, 216);
+}
+
+.myInput__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.myInput__main{
+    width: 240px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Cuprum';
+    font-size: 17px;
+}
+
+.book__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.book__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.book__item{
+    width: 17%;
+    padding: 1%;
+    box-shadow: 1px 1px 3px 3px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    transition: 1.5s all;
+}
+
+.book__item:hover{
+    background: rgb(70, 70, 255);
+    box-shadow: 1px 1px 3px 3px rgb(255, 255, 255);
+    color: #fff;
+}
+
+.book__item__image{
+    width: 100%;
+}
+
+.list__image{
+    width: 130px;
+    height: 200px;
+}
+
+.book__about{
+    text-align: center;  
+}
+
+.book__about__title{
+    font-family: 'Cuprum';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.book__about__date{
+    font-style: italic;
+}
+
+
+
+.myModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    pointer-events: none;
+    display: none;
+}
+
+.myModalContent{
+    padding: 25px;
+    background: #fff;
+    border-radius: 16px;
+    min-width: 250px;
+}
+
+.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+
+}
+
+.modal__info{
+    display: flex;
+}
+
+.modal__about{
+    border-right:2px solid rgb(209, 191, 216);
+    padding-right: 10px;
+}
+
+.modal__image{
+    padding: 5px ;
+    border: 1px solid black;
+}
+
+.modal__content{
+    padding-left: 10px;
+    max-width: 700px;
+    font-size: 17px;
+}
+
+.content__text{
+    font-weight: bold;
+    text-align: center;
+}
+
+.content__text__undertitle{
+    font-style: italic;
+    text-align: left;
+}
+
+.modal__underImage{
+    font-style: italic;
+}
+
+.modal__button{
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.modal__link{
+    padding: 10px;
+    border: 3px dashed rgb(70, 70, 255);
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.5s all;
+}
+
+.modal__link:hover{
+    background-color: rgb(70, 70, 255);
+    color: #fff;
+    border: 3px solid rgb(209, 191, 216);
+
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-weight: normal;
+    src: url('./fonts/Cuprum-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-style: italic;
+    src: url('./fonts/Cuprum-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-weight: bold;
+    src: url('./fonts/Cuprum-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-weight: bold;
+    font-style: italic;
+    src: url('./fonts/Cuprum-SemiBoldItalic.ttf');
+}
