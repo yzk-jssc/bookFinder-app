@@ -16,7 +16,7 @@ const BookList: FunctionComponent<BookListProps> = ({func}) => {
             ?( <div className='book__list'>
                 { bookList.map(book=>
             
-            <div className="book__item" key={book.id} onClick={()=>{
+            <div data-testid='book-item' className="book__item" key={book.id} onClick={()=>{
                 func(book.id)
                 
             }}>

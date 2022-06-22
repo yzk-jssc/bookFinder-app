@@ -14,7 +14,7 @@ const FinderItem: FunctionComponent<FinderItemProps> = () => {
 
     return (
         <BookNameContext.Provider value={{ bookName }}>
-            <MyInput onChange={bookNameChangeHandler}  />
+            <MyInput onChange={bookNameChangeHandler} data-testid='main-input' />
 
             <FinderList />
         </BookNameContext.Provider>

@@ -1,4 +1,4 @@
-import React, { Dispatch, FunctionComponent, ReactChild, ReactChildren, ReactNode, SetStateAction } from 'react'
+import React, { Dispatch, FunctionComponent, ReactChild,  ReactNode, SetStateAction } from 'react'
 
 interface MyModalProps {
     visible: boolean;
@@ -6,7 +6,7 @@ interface MyModalProps {
     children?: ReactNode | ReactChild 
 }
  
-const MyModal: FunctionComponent<MyModalProps> = ({visible,setVisible,children}) => {
+const MyModal: FunctionComponent<MyModalProps> = ({visible,setVisible,children, ...rest}) => {
 
 
     return (

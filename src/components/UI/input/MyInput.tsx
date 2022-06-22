@@ -4,7 +4,7 @@ import { BookNameContext } from '../../../context/context';
 
 interface MyInputProps extends InputHTMLAttributes<HTMLInputElement> {
     
-    onChange:(e:ChangeEvent<HTMLInputElement>) => void
+    onChange:(e:ChangeEvent<HTMLInputElement>) => void;
 }
  
 const MyInput: FunctionComponent<MyInputProps> = ({onChange,  ...rest}) => {
